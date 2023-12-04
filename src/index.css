@@ -10,6 +10,17 @@
   @apply mt-[56px] flex justify-center mx-auto border-b-[3px] border-[#1F2937] rounded-lg px-[30px] py-5 uppercase font-medium text-xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:bg-[#1F2937] hover:text-white;
 }
 
+.featured-img {
+  background: linear-gradient(
+      0deg,
+      rgba(21, 21, 21, 0.7) 0%,
+      rgba(21, 21, 21, 0.7) 100%
+    ),
+    url("./assets/home/featured.jpg"), lightgray 50% / cover no-repeat;
+  background-size: cover;
+  padding: 130px;
+}
+
 /* responsive carousel */
 .carousel .control-dots .dot.selected,
 .carousel .control-dots .dot:hover {
