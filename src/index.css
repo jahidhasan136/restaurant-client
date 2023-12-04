@@ -6,6 +6,19 @@
   @apply mx-auto 2xl:max-w-[1320px] xl:max-w-[1280px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] px-4;
 }
 
+.btn {
+  @apply mt-[56px] flex justify-center mx-auto border-b-[3px] border-[#1F2937] rounded-lg px-[30px] py-5 uppercase font-medium text-xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:bg-[#1F2937] hover:text-white;
+}
+
+/* responsive carousel */
+.carousel .control-dots .dot.selected,
+.carousel .control-dots .dot:hover {
+  background-color: #007aff !important;
+}
+.carousel .control-dots .dot {
+  box-shadow: none !important;
+}
+
 /* swiper js */
 .swiper-pagination {
   position: static !important;
