@@ -5,3 +5,7 @@
 .container {
   @apply mx-auto 2xl:max-w-[1320px] xl:max-w-[1280px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] px-4;
 }
+
+/* .carousel .thumbs-wrapper {
+  height: 80px !important;
+} */
