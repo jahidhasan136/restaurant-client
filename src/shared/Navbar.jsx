@@ -36,7 +36,7 @@ const Navbar = () => {
           >
             Our Menu
           </Link>
-          <Link to="#" className="flex items-center">
+          <Link to="/shop" className="flex items-center">
             <span className="transition-all duration-300 hover:text-[#EEFF25]">
               Our Shop
             </span>

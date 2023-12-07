@@ -19,7 +19,7 @@ const Menu = () => {
       {/* OFFERED SECTION */}
       <div>
         <MenuCategory
-          chefServe={chefServe}
+          img={chefServe}
           heading="Our Menu"
           subHeading="Would you like to try a dish?"
           item={offeredItem}
@@ -28,7 +28,7 @@ const Menu = () => {
       {/* DESSERTS SECTIONS */}
       <div>
         <MenuCategory
-          chefServe={chefServe}
+          img={chefServe}
           heading="desserts"
           subHeading="Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
           item={dessertItem}
@@ -37,7 +37,7 @@ const Menu = () => {
       {/* PIZZA SECTION */}
       <div>
         <MenuCategory
-          chefServe={chefServe}
+          img={chefServe}
           heading="pizza"
           subHeading="Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
           item={pizzaItem}
@@ -46,7 +46,7 @@ const Menu = () => {
       {/* SALADS SECTION */}
       <div>
         <MenuCategory
-          chefServe={chefServe}
+          img={chefServe}
           heading="salads"
           subHeading="Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
           item={saladItem}
@@ -55,7 +55,7 @@ const Menu = () => {
       {/* SOUP SECTION */}
       <div>
         <MenuCategory
-          chefServe={chefServe}
+          img={chefServe}
           heading="soup"
           subHeading="Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
           item={soupItem}

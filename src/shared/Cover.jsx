@@ -1,11 +1,11 @@
 // import chefServe from "../assets/home/chef-service.jpg";
 
-const Cover = ({ heading, subHeading, chefServe }) => {
+const Cover = ({ heading, subHeading, img }) => {
   return (
     <div
       className="text-center grid items-center justify-center"
       style={{
-        backgroundImage: `url(${chefServe})`,
+        backgroundImage: `url(${img})`,
         backgroundSize: "cover",
         width: "100%",
         height: "700px",
@@ -13,7 +13,7 @@ const Cover = ({ heading, subHeading, chefServe }) => {
     >
       <div className="bg-[#15151599] p-[128px] text-white">
         <h2 className="text-[45px] font-semibold mb-2 uppercase">{heading}</h2>
-        <p className="font-semibold w-[1096px]">{subHeading}</p>
+        <p className="font-semibold w-[1096px] uppercase">{subHeading}</p>
       </div>
     </div>
   );

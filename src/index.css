@@ -9,6 +9,9 @@
 .btn {
   @apply mt-[56px] flex justify-center mx-auto border-b-[3px] border-[#1F2937] rounded-lg px-[30px] py-5 uppercase font-medium text-xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:bg-[#1F2937] hover:text-white;
 }
+.card-btn {
+  @apply mt-[56px] flex justify-center mx-auto border-b-[3px] border-[#BB8506] text-[#BB8506] rounded-lg px-[30px] py-5 uppercase font-medium text-xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:bg-[#1F2937] hover:text-[#BB8506];
+}
 
 .featured-img {
   background: linear-gradient(
