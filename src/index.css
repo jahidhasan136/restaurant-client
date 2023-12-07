@@ -17,9 +17,12 @@
       rgba(21, 21, 21, 0.7) 100%
     ),
     url("./assets/home/featured.jpg"), lightgray 50% / cover no-repeat;
-  background-size: cover;
   background-attachment: fixed;
   padding: 130px;
+}
+.menuBanner-bg {
+  background: url("./assets/menu/banner3.jpg"), lightgray 50% / cover no-repeat;
+  height: 800px;
 }
 
 /* responsive carousel */

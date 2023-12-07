@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+// react icons
 import { GiShoppingCart } from "react-icons/gi";
 import { CgProfile } from "react-icons/cg";
 
@@ -10,36 +12,36 @@ const Navbar = () => {
           <span className="font-bold text-2xl">Restaurant</span>
         </h2>
         <div className="flex items-center gap-5 uppercase text-xl font-extrabold">
-          <a
-            href="#"
+          <Link
+            to="/"
             className="transition-all duration-300 hover:text-[#EEFF25]"
           >
             Home
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="#"
             className="transition-all duration-300 hover:text-[#EEFF25]"
           >
             Contact us
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="#"
             className="transition-all duration-300 hover:text-[#EEFF25]"
           >
             Dashboard
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/menu"
             className="transition-all duration-300 hover:text-[#EEFF25]"
           >
             Our Menu
-          </a>
-          <a href="#" className="flex items-center">
+          </Link>
+          <Link to="#" className="flex items-center">
             <span className="transition-all duration-300 hover:text-[#EEFF25]">
               Our Shop
             </span>
             <GiShoppingCart className="text-[43px]" />
-          </a>
+          </Link>
           <p className="flex items-center gap-2 cursor-pointer">
             <span className="transition-all duration-300 hover:text-[#EEFF25]">
               Sign out
