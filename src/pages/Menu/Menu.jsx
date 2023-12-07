@@ -22,6 +22,7 @@ const Menu = () => {
           img={chefServe}
           heading="Our Menu"
           subHeading="Would you like to try a dish?"
+          title="offered"
           item={offeredItem}
         />
       </div>
@@ -31,6 +32,7 @@ const Menu = () => {
           img={chefServe}
           heading="desserts"
           subHeading="Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+          title="dessert"
           item={dessertItem}
         />
       </div>
@@ -40,6 +42,7 @@ const Menu = () => {
           img={chefServe}
           heading="pizza"
           subHeading="Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+          title="pizza"
           item={pizzaItem}
         />
       </div>
@@ -49,6 +52,7 @@ const Menu = () => {
           img={chefServe}
           heading="salads"
           subHeading="Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+          title="salad"
           item={saladItem}
         />
       </div>
@@ -58,6 +62,7 @@ const Menu = () => {
           img={chefServe}
           heading="soup"
           subHeading="Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+          title="soup"
           item={soupItem}
         />
       </div>

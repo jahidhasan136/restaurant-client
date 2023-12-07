@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Cover from "../../shared/Cover";
 import MenuItem from "../../shared/MenuItem";
 
-const MenuCategory = ({ heading, subHeading, item, img }) => {
+const MenuCategory = ({ heading, subHeading, item, img, title }) => {
   return (
     <div>
       <Cover img={img} heading={heading} subHeading={subHeading} />
@@ -12,7 +12,7 @@ const MenuCategory = ({ heading, subHeading, item, img }) => {
           <MenuItem key={item._id} item={item} />
         ))}
       </div>
-      <Link to="#">
+      <Link to={`/shop/${title}`}>
         <button className="btn mb-[43px]">View your favourite food</button>
       </Link>
     </div>
