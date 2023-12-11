@@ -1,13 +1,19 @@
 // react icons
 import { FaFacebookF, FaGoogle, FaGithub } from "react-icons/fa";
 // react simple captcha
-import { loadCaptchaEnginge, LoadCanvasTemplate } from "react-simple-captcha";
+import {
+  loadCaptchaEnginge,
+  LoadCanvasTemplateNoReload,
+  validateCaptcha,
+} from "react-simple-captcha";
 // images
 import { Link } from "react-router-dom";
 import authenticationImg from "../../assets/others/authentication2.png";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Login = () => {
+  const [disabled, setDisabled] = useState(true);
+  const captchaRef = useRef(null);
   useEffect(() => {
     loadCaptchaEnginge(6);
   }, []);
@@ -17,6 +23,14 @@ const Login = () => {
     const email = form.email.value;
     const password = form.password.value;
     console.log(email, password);
+  };
+  const handleCaptcha = () => {
+    const user_captcha = captchaRef.current.value;
+    if (validateCaptcha(user_captcha)) {
+      setDisabled(false);
+    } else {
+      setDisabled(true);
+    }
   };
   return (
     <div className="bg_login grid items-center">
@@ -45,17 +59,22 @@ const Login = () => {
             />
           </div>
           <div className="mb-6">
-            <LoadCanvasTemplate className="py-[27px] px-[29px] bg-white rounded-lg w-full" />
+            <LoadCanvasTemplateNoReload className="py-[27px] px-[29px] bg-white rounded-lg w-full" />
           </div>
           <div className="mb-[31px]">
             <input
+              ref={captchaRef}
+              onClick={handleCaptcha}
               className="py-[27px] px-[29px] text-[#A1A1A1] rounded-lg w-full border border-[#D0D0D0]"
               type="text"
               name="captcha"
               placeholder="Type captcha code"
             />
           </div>
-          <button className="py-[27px] px-[29px] text-white text-xl font-bold rounded-lg w-full bg-[#d1a054b3] mb-[34px]">
+          <button
+            disabled={disabled}
+            className="py-[27px] px-[29px] text-white text-xl font-bold rounded-lg w-full bg-[#d1a054b3] mb-[34px]"
+          >
             Sign in
           </button>
           <h3 className="text-[#D1A054] text-xl font-medium text-center">
