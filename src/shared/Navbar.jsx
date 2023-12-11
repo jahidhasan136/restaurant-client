@@ -43,9 +43,12 @@ const Navbar = () => {
             <GiShoppingCart className="text-[43px]" />
           </Link>
           <p className="flex items-center gap-2 cursor-pointer">
-            <span className="transition-all duration-300 hover:text-[#EEFF25]">
+            <Link
+              to="/login"
+              className="transition-all duration-300 hover:text-[#EEFF25]"
+            >
               Sign out
-            </span>
+            </Link>
             <CgProfile className="text-[43px]" />
           </p>
         </div>

@@ -28,6 +28,13 @@
   height: 800px;
 }
 
+.bg_login {
+  background: url("./assets/others/authentication.png"),
+    lightgray 50% / cover no-repeat;
+  height: 100vh;
+  z-index: -1;
+}
+
 /* responsive carousel */
 .carousel .control-dots .dot.selected,
 .carousel .control-dots .dot:hover {
