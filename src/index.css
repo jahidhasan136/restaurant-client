@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply mx-auto 2xl:max-w-[1320px] xl:max-w-[1280px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] px-4;
+}
+
+.btn {
+  @apply mt-[56px] flex justify-center mx-auto border-b-[3px] border-[#1F2937] rounded-lg px-[30px] py-5 uppercase font-medium text-xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:bg-[#1F2937] hover:text-white;
+}
+.card-btn {
+  @apply mt-[56px] flex justify-center mx-auto border-b-[3px] border-[#BB8506] text-[#BB8506] rounded-lg px-[30px] py-5 uppercase font-medium text-xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:bg-[#1F2937] hover:text-[#BB8506];
+}
+
+.featured-img {
+  background: linear-gradient(
+      0deg,
+      rgba(21, 21, 21, 0.7) 0%,
+      rgba(21, 21, 21, 0.7) 100%
+    ),
+    url("./assets/home/featured.jpg"), lightgray 50% / cover no-repeat;
+  background-attachment: fixed;
+  padding: 130px;
+}
+.menuBanner-bg {
+  background: url("./assets/menu/banner3.jpg"), lightgray 50% / cover no-repeat;
+  height: 800px;
+}
+
+.bg_login {
+  background: url("./assets/others/authentication.png"),
+    lightgray 50% / cover no-repeat;
+  height: 100vh;
+  z-index: -1;
+}
+
+/* responsive carousel */
+.carousel .control-dots .dot.selected,
+.carousel .control-dots .dot:hover {
+  background-color: #007aff !important;
+}
+.carousel .control-dots .dot {
+  box-shadow: none !important;
+}
+
+/* swiper js */
+.swiper-pagination {
+  position: static !important;
+  margin-top: 32px;
+}
+.swiper-pagination-bullet {
+  width: 15px !important;
+  height: 15px !important;
+}
